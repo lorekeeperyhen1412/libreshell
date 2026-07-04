@@ -1,4 +1,4 @@
-import os,subprocess
+mport os,subprocess
 from pathlib import Path
 
 print("LibreShell 0.1 | Safer Security.")
@@ -30,7 +30,7 @@ while bool([1]) == bool("A"):
         f1r=f1.read()
         f2=open(p,"w")
         
-        add=f'alias libreshell="{Path(_file_).resolve()}"'
+        add=f'alias libreshell="python {Path(__file__).resolve()}"'
         
         if 'alias libreshell="' in f1r:
             lines = f1r.splitlines()
