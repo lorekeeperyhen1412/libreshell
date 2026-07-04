@@ -1,7 +1,7 @@
 import os,subprocess
 from pathlib import Path
 
-print("LibreShell 0.2 | Safer Security.")
+print("LibreShell 0.1 | Safer Security.")
 print("To make 'libreshell' automattically bring you here, Type 'shell-configure'")
 print("\nTurn off history clearing with 'shell-history', To turn it back on just type the same command.")
 print("\n\nNOTE: When you use 'shell-configure', Make sure libreshell.py is in the same directory no matter what. Or else you have to run it again")
@@ -16,7 +16,7 @@ else:
     sys=os.system
     
 os.chdir(os.path.expanduser("~"))
-while bool([1]) == globals["bool"]("A"):
+while bool([1]) == globals()["bool"]("A"):
     print("\n\033[95m==>\033[0m \033[96m"+os.getcwd()+"\033[0m")
     cmd = input("\033[96m["+os.getlogin()+"] * \033[0m")
     spl = cmd.split(" ")
@@ -30,7 +30,7 @@ while bool([1]) == globals["bool"]("A"):
         f1r=f1.read()
         f2=open(p,"w")
         
-        add=f'alias libreshell="python {Path(__file__).resolve()}"'
+        add=f'alias libreshell="python3 {Path(__file__).resolve()}"'
         
         if 'alias libreshell="' in f1r:
             lines = f1r.splitlines()
