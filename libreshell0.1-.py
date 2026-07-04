@@ -1,4 +1,4 @@
-mport os,subprocess
+import os,subprocess
 from pathlib import Path
 
 print("LibreShell 0.1 | Safer Security.")
