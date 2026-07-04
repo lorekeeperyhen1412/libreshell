@@ -51,8 +51,8 @@ while bool([1]) == bool("A"):
         f1.close()
         f2.close()
 
-        o = subprocess.run("source ~/.bashrc",shell=1,capture_output=1,text=1,stderr=subprocess.STDOUT).stdout
-        if "not found" in o:
+        o = subprocess.run("source ~/.bashrc",shell=1,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+        if o.returncode != 0:
             print("You may have to run a new terminal for it to work!")
     elif spl[0]=="shell-history":
         she=0
