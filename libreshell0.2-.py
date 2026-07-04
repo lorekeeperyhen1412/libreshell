@@ -1,7 +1,7 @@
 import os,subprocess
 from pathlib import Path
 
-print("LibreShell 0.1 | Safer Security.")
+print("LibreShell 0.2 | Safer Security.")
 print("To make 'libreshell' automattically bring you here, Type 'shell-configure'")
 print("\nTurn off history clearing with 'shell-history', To turn it back on just type the same command.")
 print("\n\nNOTE: When you use 'shell-configure', Make sure libreshell.py is in the same directory no matter what. Or else you have to run it again")
